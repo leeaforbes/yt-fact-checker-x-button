@@ -1,0 +1,31 @@
+#secondary {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+#secondary::-webkit-scrollbar {
+  display: none;
+}
+
+.ourButton {
+  background-color: #252525;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 0 15px;
+  margin-right: 3px;
+  display: inline-block;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+  border: none;
+  height: 36px;
+  
+  &:hover {
+    background-color: #444;
+  }
+  
+  &:active {
+    background-color: #959595;;
+  }
+} 
+
