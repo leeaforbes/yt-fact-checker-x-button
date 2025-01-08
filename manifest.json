@@ -10,7 +10,7 @@
       "js": ["content_script/content_script.js"]
     }
   ],
-  "permissions": ["webNavigation", "scripting"],
+  "permissions": ["webNavigation", "scripting", "storage"],
   "host_permissions": ["https://www.youtube.com/*"],
   "icons": {
     "128": "icon128.png"

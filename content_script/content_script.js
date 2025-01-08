@@ -43,7 +43,14 @@
       .querySelector(bannerIdSelector)
 
     if (divElement) {
-      addCloseButton(divElement);
+      chrome.storage.sync.get('autoClose', function(data) {
+        if (data.autoClose) {
+          closeFactCheckerBanner();
+        } else {
+          addCloseButton(divElement);
+        }
+      });
+
       observer.disconnect();
     }
   }
